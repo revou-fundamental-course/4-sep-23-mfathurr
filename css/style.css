@@ -1,0 +1,14 @@
+:root {
+  --font-brand: "Cherry Bomb One", cursive;
+  --font-hp: "Quicksand", sans-serif;
+  --fw-bold: bold;
+}
+
+body {
+  font-family: var(--font-hp);
+}
+
+header p {
+  font-family: var(--font-brand);
+  font-size: 2rem;
+}
