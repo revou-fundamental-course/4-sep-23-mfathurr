@@ -1,7 +1,6 @@
 :root {
   --font-brand: "Cherry Bomb One", cursive;
   --font-hp: "Quicksand", sans-serif;
-  --fw-bold: bold;
 }
 
 * {
@@ -12,18 +11,19 @@
 
 body {
   font-family: var(--font-hp);
-  background-color: #f5f5f5;
-  /* background-color: yellowgreen; */
+  background-color: #dddbdb;
+  font-weight: normal;
 }
 
 header,
-section#luas h1,
-section#keliling h1 {
+section#luas h2:first-of-type,
+section#keliling h2:first-of-type {
   background-color: #3498db;
-  height: 15vh;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 header h1 {
@@ -33,7 +33,7 @@ header h1 {
 header p {
   color: white;
   font-family: var(--font-brand);
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -48,10 +48,10 @@ header p span {
 
 main {
   background-color: white;
-  max-width: 95vw;
-  margin: 2em auto;
+  max-width: 90vw;
+  margin: 1em auto;
   border-radius: 5px;
-  padding: 1em 2em;
+  padding: 0.5em 1.5em;
 }
 
 section.info {
@@ -71,13 +71,15 @@ nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 15px auto;
 }
 
 nav .btn-nav {
   margin: 5px auto;
   width: 100%;
   color: #689ac9;
-  background-color: #f5f5f5;
+  font-weight: bold;
+  background-color: #dddbdb;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
@@ -89,8 +91,143 @@ nav .btn-nav:focus {
   color: white;
 }
 
-section#luas h1,
-section#keliling h1 {
-  margin: 20px 0;
+section#luas,
+section#keliling {
+  border: 3px solid #3498db;
+  margin: 20px auto;
+}
+
+/* CSS Square Shape */
+.shape {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: calc(100% / 3);
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.square:not(.square:nth-of-type(5)) {
+  border: none;
+  padding: 2px;
+}
+
+.square:nth-of-type(1) {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.square:nth-of-type(3) {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.square:nth-of-type(7) {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.square:nth-of-type(8) {
+  justify-content: center;
+  align-items: flex-start;
+  margin: 15px auto;
+}
+
+.square:nth-of-type(8) > span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.square:nth-of-type(9) {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* End CSS Square Shape */
+
+section#luas p,
+section#keliling p {
+  margin: 5px 0 5px 10px;
+}
+
+section#luas > p:nth-of-type(2),
+section#keliling > p:nth-of-type(2) {
+  font-weight: 600;
+  text-align: center;
+}
+
+hr {
+  margin: 15px auto;
+  width: 95%;
+}
+
+section#luas h2:last-of-type,
+section#keliling h2:last-of-type {
+  text-align: center;
+}
+
+input {
+  margin: 15px auto;
+  display: block;
+  width: 90%;
+  font-size: 1.25em;
+  padding: 5px;
+}
+
+input:focus {
+  border: 2px ridge #689ac9;
+  border-radius: 5px;
+  transition: all 5s ease-in-out;
+}
+
+section#luas p:last-of-type span,
+section#keliling p:last-of-type span {
+  font-weight: 600;
+}
+
+.btn-action {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 1.5em;
+}
+
+.btn-submit,
+.btn-reset {
+  display: flex;
+  padding: 1em 2em;
+  width: 100%;
+  max-width: 150px;
+  margin: 15px auto;
   color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-submit {
+  background-color: #3498db;
+}
+
+.btn-submit:hover {
+  background-color: #2c83bd;
+}
+
+.btn-reset {
+  background-color: #efa843;
+}
+
+.btn-reset:hover {
+  background-color: #ffae3c;
 }
