@@ -16,11 +16,14 @@ body {
   /* background-color: yellowgreen; */
 }
 
-header {
+header,
+section#luas h1,
+section#keliling h1 {
   background-color: #3498db;
-  height: 20vh;
+  height: 15vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 header h1 {
@@ -30,7 +33,7 @@ header h1 {
 header p {
   color: white;
   font-family: var(--font-brand);
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -51,8 +54,17 @@ main {
   padding: 1em 2em;
 }
 
-.info {
+section.info {
   text-align: center;
+}
+
+section.info h1 {
+  font-size: 2em;
+  margin: 15px 0;
+}
+
+section.info p {
+  line-height: 1.5;
 }
 
 nav {
@@ -62,7 +74,7 @@ nav {
 }
 
 nav .btn-nav {
-  margin: 10px auto;
+  margin: 5px auto;
   width: 100%;
   color: #689ac9;
   background-color: #f5f5f5;
@@ -74,5 +86,11 @@ nav .btn-nav {
 
 nav .btn-nav:focus {
   background-color: blue;
+  color: white;
+}
+
+section#luas h1,
+section#keliling h1 {
+  margin: 20px 0;
   color: white;
 }
