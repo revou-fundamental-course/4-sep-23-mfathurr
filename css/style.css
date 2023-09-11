@@ -222,6 +222,7 @@ section#keliling p:last-of-type span {
 
 .btn-submit:hover {
   background-color: #2c83bd;
+  cursor: pointer;
 }
 
 .btn-reset {
@@ -230,4 +231,5 @@ section#keliling p:last-of-type span {
 
 .btn-reset:hover {
   background-color: #ffae3c;
+  cursor: pointer;
 }
