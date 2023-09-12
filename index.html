@@ -42,17 +42,10 @@
 
       <section id="luas">
         <h2>Luas Persegi</h2>
-        <div class="shape">
-          <div class="square">A</div>
-          <div class="square"></div>
-          <div class="square">B</div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square">C</div>
-          <div class="square"><span>Bujur Sangkar</span></div>
-          <div class="square">D</div>
-        </div>
+        <figure>
+          <img src="./images/Square.png" alt="Square Image" />
+          <figcaption>Bujur Sangkar</figcaption>
+        </figure>
         <p>Rumus Luas Persegi yaitu:</p>
         <p>L = S x S</p>
         <p>Dimana:</p>
@@ -60,36 +53,39 @@
         <p>S = Sisi</p>
         <hr />
         <h2>Hitung Luas Persegi</h2>
-        <input type="number" name="number" id="numberLuas" required />
+        <!-- <input type="number" name="number" id="numberLuas" required />
         <p>L = S x S</p>
         <p>L = <span class="sisi1">0</span> x <span class="sisi2">0</span></p>
         <p>L = <span>0</span></p>
         <div class="btn-action">
           <button type="submit" class="btn-submit">Hitung</button>
           <button type="reset" class="btn-reset">Reset</button>
-        </div>
+        </div> -->
+        <form method="post">
+          <input type="number" name="number" id="numberLuas" required />
+          <p>L = S x S</p>
+          <p>L = <span class="sisi1">0</span> x <span class="sisi2">0</span></p>
+          <p>L = <span>0</span></p>
+          <div class="btn-action">
+            <button type="submit" class="btn-submit">Hitung</button>
+            <button type="reset" class="btn-reset">Reset</button>
+          </div>
+        </form>
       </section>
 
       <section id="keliling">
         <h2>Keliling Persegi</h2>
-        <div class="shape">
-          <div class="square">A</div>
-          <div class="square"></div>
-          <div class="square">B</div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square">C</div>
-          <div class="square"><span>Bujur Sangkar</span></div>
-          <div class="square">D</div>
-        </div>
+        <figure>
+          <img src="./images/Square.png" alt="Square Image" />
+          <figcaption>Bujur Sangkar</figcaption>
+        </figure>
         <p>Rumus Keliling Persegi yaitu:</p>
         <p>K = 4 x S</p>
         <p>Dimana:</p>
         <p>S = Sisi</p>
         <hr />
         <h2>Hitung Keliling Persegi</h2>
-        <input type="number" name="inputNumber" id="numberKeliling" required />
+        <input type="number" id="numberKeliling" required />
         <p>L = 4 x S</p>
         <p>L = 4 x <span class="sisi1">0</span></p>
         <p>L = <span>0</span></p>

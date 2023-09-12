@@ -21,16 +21,18 @@ const btnSubmit = document.getElementsByClassName("btn-submit");
 const sisi1 = document.getElementsByClassName("sisi1");
 const sisi2 = document.getElementsByClassName("sisi2");
 
-btnSubmit[0].addEventListener("click", () => {
-  sectionLuas.classList.contains("active")
-    ? hitungLuas()
-    : "Terjadi kesalahan hitung luas";
+btnSubmit[0].addEventListener("click", (e) => {
+  if (sectionLuas.classList.contains("active")) {
+    e.preventDefault();
+    hitungLuas();
+  }
 });
 
-btnSubmit[1].addEventListener("click", () => {
-  sectionKeliling.classList.contains("active")
-    ? hitungKeliling()
-    : "Terjadi kesalahan hitung keliling";
+btnSubmit[1].addEventListener("click", (e) => {
+  if (sectionKeliling.classList.contains("active")) {
+    e.preventDefault();
+    hitungKeliling();
+  }
 });
 
 function hitungLuas() {
@@ -48,30 +50,30 @@ function hitungKeliling() {
     4 * inputNumber;
 }
 
-// 4. Reset button
+// 3. Reset button
 const btnReset = document.getElementsByClassName("btn-reset");
 
 btnReset[0].addEventListener("click", () => {
-  sectionLuas.classList.contains("active")
-    ? resetLuas()
-    : "Terjadi kesalahan reset luas";
+  if (sectionLuas.classList.contains("active")) {
+    resetLuas();
+  }
 });
 
 btnReset[1].addEventListener("click", () => {
-  sectionKeliling.classList.contains("active")
-    ? resetKeliling()
-    : "Terjadi kesalahan reset keliling";
+  if (sectionKeliling.classList.contains("active")) {
+    resetKeliling();
+  }
 });
 
 function resetLuas() {
   document.getElementById("numberLuas").value = "";
   sisi1[0].innerHTML = 0;
   sisi2[0].innerHTML = 0;
-  document.querySelector("section#luas p:last-of-type span").innerHTML = 0;
+  document.querySelector("section#luas p:last-of-type span").innerText = 0;
 }
 
 function resetKeliling() {
   document.getElementById("numberKeliling").value = "";
-  sisi1[0].innerHTML = 0;
-  document.querySelector("section#keliling p:last-of-type span").innerHTML = 0;
+  sisi1[0].innerText = 0;
+  document.querySelector("section#keliling p:last-of-type span").innerText = 0;
 }

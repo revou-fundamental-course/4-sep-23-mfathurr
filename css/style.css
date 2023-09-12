@@ -106,61 +106,16 @@ section#keliling {
 }
 
 /* CSS Square Shape */
-.shape {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.square {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  width: calc(100% / 3);
-  border: 1px solid black;
-  font-weight: bold;
-}
-
-.square:not(.square:nth-of-type(5)) {
-  border: none;
-  padding: 2px;
-}
-
-.square:nth-of-type(1) {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.square:nth-of-type(3) {
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-.square:nth-of-type(7) {
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.square:nth-of-type(8) {
-  justify-content: center;
-  align-items: flex-start;
-  margin: 15px auto;
-}
-
-.square:nth-of-type(8) > span {
-  position: absolute;
+figure img {
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto 10px;
   display: block;
-  width: 100%;
-  text-align: center;
-  margin: 15px auto;
 }
 
-.square:nth-of-type(9) {
-  justify-content: flex-start;
-  align-items: flex-start;
+figcaption {
+  text-align: center;
+  margin-bottom: 50px;
 }
 /* End CSS Square Shape */
 
@@ -196,7 +151,6 @@ input {
 input:focus {
   border: 2px ridge #689ac9;
   border-radius: 5px;
-  transition: all 5s ease-in-out;
 }
 
 section#luas p:last-of-type span,
@@ -221,7 +175,6 @@ section#keliling p:last-of-type span {
   font-weight: bold;
   border-radius: 5px;
   justify-content: center;
-  transition: all 0.5s ease-in-out;
 }
 
 .btn-submit {
@@ -240,4 +193,46 @@ section#keliling p:last-of-type span {
 .btn-reset:hover {
   background-color: #ffae3c;
   cursor: pointer;
+}
+
+/* Media Quary untuk lebar layar minimal 640px */
+@media screen and (min-width: 640px) {
+  header a {
+    font-size: 3rem;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  nav .btn-nav {
+    width: calc(100% / 3);
+    max-width: 300px;
+  }
+
+  section#luas p,
+  section#keliling p {
+    margin: 10px 0 10px 35px;
+  }
+}
+
+/* Browser scrollbar (!Important - Tidak berfungsi di mozilla firefox) */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c83bd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3498db;
 }
