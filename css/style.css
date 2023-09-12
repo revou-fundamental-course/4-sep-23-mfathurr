@@ -86,10 +86,11 @@ nav .btn-nav {
   text-decoration: none;
   border-radius: 5px;
   padding: 1rem;
+  cursor: pointer;
 }
 
 nav .btn-nav:focus {
-  background-color: blue;
+  background-color: #3498db;
   color: white;
 }
 
