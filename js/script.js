@@ -1,8 +1,6 @@
 // 1. Buat section show/hide dengan kelas active/disabled
 const navHitungLuas = document.querySelector("nav button:nth-child(1)");
-console.log(navHitungLuas);
 const navHitungKeliling = document.querySelector("nav button:nth-child(2)");
-console.log(navHitungKeliling);
 const sectionLuas = document.querySelector("section#luas");
 const sectionKeliling = document.querySelector("section#keliling");
 
