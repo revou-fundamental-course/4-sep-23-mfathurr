@@ -1,29 +1,30 @@
 :root {
   --font-brand: "Cherry Bomb One", cursive;
   --font-hp: "Quicksand", sans-serif;
+  --main-color: #3498db;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-hp);
   background-color: #dddbdb;
+  font-family: var(--font-hp);
   font-weight: normal;
 }
 
 header,
 section#luas h2:first-of-type,
 section#keliling h2:first-of-type {
-  background-color: #3498db;
-  height: 120px;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  background-color: var(--main-color);
   color: white;
+  display: flex;
+  height: 120px;
+  justify-content: center;
 }
 
 header h1 {
@@ -31,17 +32,17 @@ header h1 {
 }
 
 header a {
+  align-items: baseline;
   color: white;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
   font-family: var(--font-brand);
   font-size: 2.75rem;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  align-items: baseline;
   gap: 0.25em;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
   text-decoration: none;
-  cursor: pointer;
 }
 
 header a span {
@@ -50,9 +51,9 @@ header a span {
 
 main {
   background-color: white;
-  max-width: 90vw;
-  margin: 1em auto;
   border-radius: 5px;
+  margin: 1em auto;
+  max-width: 90vw;
   padding: 0.5em 1.5em;
 }
 
@@ -71,34 +72,34 @@ section.info p {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 15px auto;
 }
 
 nav .btn-nav {
-  margin: 5px auto;
-  width: 100%;
-  color: #689ac9;
-  font-weight: bold;
   background-color: #dddbdb;
+  border-radius: 5px;
+  color: #689ac9;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px auto;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
-  padding: 1rem;
-  cursor: pointer;
+  width: 100%;
 }
 
 nav .btn-nav:focus {
-  background-color: #3498db;
+  background-color: var(--main-color);
   color: white;
 }
 
 section#luas,
 section#keliling {
-  border: 3px solid #3498db;
-  margin: 20px auto;
+  border: 3px solid var(--main-color);
   display: none;
+  margin: 20px auto;
 }
 
 .active {
@@ -107,15 +108,15 @@ section#keliling {
 
 /* CSS Square Shape */
 figure img {
-  max-width: 100%;
+  display: block;
   height: auto;
   margin: 30px auto 10px;
-  display: block;
+  max-width: 100%;
 }
 
 figcaption {
-  text-align: center;
   margin-bottom: 50px;
+  text-align: center;
 }
 /* End CSS Square Shape */
 
@@ -141,16 +142,16 @@ section#keliling h2:last-of-type {
 }
 
 input {
-  margin: 15px auto;
   display: block;
-  width: 90%;
   font-size: 1.25em;
+  margin: 15px auto;
   padding: 5px;
+  width: 90%;
 }
 
 input:focus {
-  border: 2px ridge #689ac9;
   border-radius: 5px;
+  border: 2px ridge #689ac9;
 }
 
 section#luas p:last-of-type span,
@@ -166,19 +167,19 @@ section#keliling p:last-of-type span {
 
 .btn-submit,
 .btn-reset {
+  border-radius: 5px;
+  color: white;
   display: flex;
+  font-weight: bold;
+  justify-content: center;
+  margin: 15px auto;
+  max-width: 150px;
   padding: 1em 2em;
   width: 100%;
-  max-width: 150px;
-  margin: 15px auto;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  justify-content: center;
 }
 
 .btn-submit {
-  background-color: #3498db;
+  background-color: var(--main-color);
 }
 
 .btn-submit:hover {
@@ -215,6 +216,53 @@ section#keliling p:last-of-type span {
     margin: 10px 0 10px 35px;
   }
 }
+/* End Media Quary */
+
+footer {
+  background-color: var(--main-color);
+  color: white;
+  height: fit-content;
+  padding: 20px;
+}
+
+footer p:not(footer p:first-of-type) {
+  margin: 13px 0 13px 15px;
+  text-align: center;
+}
+
+footer img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer p:first-of-type,
+footer p:nth-child(3) {
+  font-weight: bold;
+}
+
+footer ul li::before {
+  content: "➔ ";
+}
+
+footer ul li {
+  color: white;
+  list-style: none;
+  margin: 13px;
+}
+
+footer ul li span {
+  font-weight: bold;
+}
+
+footer p span {
+  color: red;
+}
+
+footer a {
+  color: yellow;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 /* Browser scrollbar (!Important - Tidak berfungsi di mozilla firefox) */
 /* width */
@@ -234,5 +282,6 @@ section#keliling p:last-of-type span {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3498db;
+  background: var(--main-color);
 }
+/* End Browser scrollbar */
