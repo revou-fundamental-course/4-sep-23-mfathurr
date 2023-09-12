@@ -28,4 +28,5 @@ Reference:
 [2]: <a href="https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d" target="_blank">https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d (How to Center Image)</a>  
 [3]: <a href="https://linuxhint.com/markdown-center-text/" target="_blank">https://linuxhint.com/markdown-center-text (How to Center Text)</a>  
 [4]: <a href="https://translate.google.com" target="_blank">https://translate.google.com (Partially translated by)</a>  
-[5]: <a href="https://beta.emojipedia.org" target="_blank">https://beta.emojipedia.org (Emoji Country Flag)</a>
+[5]: <a href="https://beta.emojipedia.org" target="_blank">https://beta.emojipedia.org (Emoji Country Flag)</a>  
+[6] <a href="https://formito.com/tools/favicon" target="_blank">https://formito.com/tools/favicon (Favicon Free Maker)</a>
