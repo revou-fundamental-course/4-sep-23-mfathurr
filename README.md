@@ -1,4 +1,5 @@
 # 4-sep-23-mfathurr
+
 4-sep-23-mfathurr created by GitHub Classroom
 
 ---
@@ -13,7 +14,7 @@ Welcome to Katik
 Hai Sobat, Selamat datang di Katik :)  
 Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas keliling bangun datar
 
-**Live Demo:** 
+**Live Demo:** <https://katik-mfathurr.netlify.app/>
 
 ID 🇮🇩 :  
 Web aplikasi ini saya buat sebagai Tugas Akhir: mini coding project dari pelatihan gratis RevouU Fundamental Course: Software Engineering.
