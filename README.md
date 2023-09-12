@@ -24,9 +24,9 @@ Website: <a href="https://mfathurr.github.io" target="_blank">https://mfathurr.g
 Blog: <a href="https://mfathurr.hashnode.dev" target="_blank">https://mfathurr.hashnode.dev (Under Construction and Still research for the first post)</a>
 
 Reference:  
-[1]: <a href="https://www.markdownguide.org/basic-syntax" target="_blank">https://www.markdownguide.org/basic-syntax (Markdown Guide)</a>  
-[2]: <a href="https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d" target="_blank">https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d (How to Center Image)</a>  
-[3]: <a href="https://linuxhint.com/markdown-center-text/" target="_blank">https://linuxhint.com/markdown-center-text (How to Center Text)</a>  
-[4]: <a href="https://translate.google.com" target="_blank">https://translate.google.com (Partially translated by)</a>  
-[5]: <a href="https://beta.emojipedia.org" target="_blank">https://beta.emojipedia.org (Emoji Country Flag)</a>  
-[6] <a href="https://formito.com/tools/favicon" target="_blank">https://formito.com/tools/favicon (Favicon Free Maker)</a>
+[1]: <https://www.markdownguide.org/basic-syntax> (Markdown Guide)  
+[2]: <https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d> (How to Center Image)  
+[3]: <https://linuxhint.com/markdown-center-text> (How to Center Text)  
+[4]: <https://translate.google.com> (Partially translated by)  
+[5]: <https://beta.emojipedia.org> (Emoji Country Flag)  
+[6] <https://formito.com/tools/favicon> (Favicon Free Maker)
