@@ -32,5 +32,5 @@ Reference:
 [3]: <https://linuxhint.com/markdown-center-text> (How to Center Text)  
 [4]: <https://translate.google.com> (Partially translated by)  
 [5]: <https://beta.emojipedia.org> (Emoji Country Flag)  
-[6] <https://formito.com/tools/favicon> (Favicon Free Maker)
+[6] <https://formito.com/tools/favicon> (Favicon Free Maker)  
 [7] <https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp> (How TO - Custom Scrollbar)
