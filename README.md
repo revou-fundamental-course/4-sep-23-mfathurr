@@ -26,6 +26,7 @@ I made this web application as a final assignment: a mini coding project from th
 Author: Muhammad Fathur Rachman  
 Website: <a href="https://mfathurr.github.io" target="_blank">https://mfathurr.github.io (Under Construction)</a>  
 Blog: <a href="https://mfathurr.hashnode.dev" target="_blank">https://mfathurr.hashnode.dev (Under Construction and Still research for the first post)</a>
+LinkedIn: <a href="https://www.linkedin.com/in/muhammad-fathur-rachman" target="_blank">https://www.linkedin.com/in/muhammad-fathur-rachman</a>
 
 Reference:  
 [1]: <https://www.markdownguide.org/basic-syntax> (Markdown Guide)  
